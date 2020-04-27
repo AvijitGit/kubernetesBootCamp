@@ -1,0 +1,4 @@
+com\microservice\EdgeService\EdgeServiceApplication.class
+com\microservice\EdgeService\ItemClient.class
+com\microservice\EdgeService\Item.class
+com\microservice\EdgeService\GoodItemApiAdapterRestController.class

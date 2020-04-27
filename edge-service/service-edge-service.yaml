@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: edge-service
+spec:
+  selector:
+    run: edge-service
+  ports:
+    - port: 8764
+      targetPort: 8764
+  type: LoadBalancer
