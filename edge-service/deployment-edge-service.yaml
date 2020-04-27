@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: edge-service
+  labels:
+    run: edge-service
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: edge-service
+    spec:
+      containers:
+        - name: edge-service
+          image: edge-service #509245120947.dkr.ecr.us-east-1.amazonaws.com/my-app:edge-service
+          imagePullPolicy: Never #Always
+          ports:
+            - containerPort: 8764
+              protocol: TCP
