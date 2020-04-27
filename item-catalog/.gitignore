@@ -1,0 +1,14 @@
+HELP.md
+
+### Ignaore The target folder ###
+/target
+
+
+### IntelliJ IDEA ###
+.idea
+Item-Catalog.iml
+
+### Maven ###
+/.mvn/
+/mvnw
+mvnw.cmd

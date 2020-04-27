@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: item-catalog-service
+spec:
+  selector:
+    run: item-catalog-service
+  ports:
+    - port: 8763
+      targetPort: 8763
+  type: LoadBalancer
